@@ -1,128 +1,222 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-        <!-- Estilos -->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
-      <!-- CSS only -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-      
-        <title>Payment form example</title>
-    </head>
-    <body>
-        
-        <div class="container mt-5">
-            <form class=" g-3">
-      <div class="card">
-        <div class="card-header fw-bold fs-3 ">
-            Payment form example
-          </div>
+    <!-- Estilos -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <title>Payment form example</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <form class="g-3">
+        <div class="card">
+          <div class="card-header fw-bold fs-3">Payment form example</div>
           <div class="card-body row">
-            <div class=" col-md-12  w-100">
-                <div class="rounded-3 alert-danger mx-3 mb-3 p-2" role="alert "> Falta completar algunos campos</div>
-                </div>
+            <div class="col-md-12 w-100">
+              <div class="rounded-3 alert-danger mx-3 mb-3 p-2" role="alert ">
+                Falta completar algunos campos
+              </div>
+            </div>
             <div class="col-md-5">
-                <label for="validationDefault01" class="form-label">Card #</label>
-                <input type="text" class="form-control" id="validationDefault01"  placeholder="XXXXXXXXXXXXXXXXXX" required>
+              <label for="validationDefault01" class="form-label">Card #</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault01"
+                placeholder="XXXXXXXXXXXXXXXXXX"
+                required
+              />
+            </div>
+            <div class="col-md-3">
+              <label for="validationDefault02" class="form-label">CVC #</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault02"
+                placeholder="0000"
+                required
+              />
+            </div>
+            <div class="col-md-4">
+              <label for="validationDefaultUsername" class="form-label"
+                >Amount</label
+              >
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">$</span>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="validationDefaultUsername"
+                  placeholder="Amount"
+                  aria-describedby="inputGroupPrepend2"
+                  required
+                />
               </div>
-              <div class="col-md-3">
-                <label for="validationDefault02" class="form-label">CVC #</label>
-                <input type="text" class="form-control" id="validationDefault02"  placeholder="0000" required>
-              </div>
-              <div class="col-md-4">
-                <label for="validationDefaultUsername" class="form-label">Amount</label>
-                <div class="input-group">
-                  <span class="input-group-text" id="inputGroupPrepend2">$</span>
-                  <input type="text" class="form-control" id="validationDefaultUsername"  placeholder="Amount" aria-describedby="inputGroupPrepend2" required>
-                </div>
-              </div>
-              <div class="col-md-6 mt-2">
-                <label for="validationDefault03" class="form-label">First Name</label>
-                <input type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-6 mt-2">
-                <label for="validationDefault03" class="form-label">Last Name</label>
-                <input type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-6 mt-2">
-                <label for="validationDefault03" class="form-label">city</label>
-                <input type="text" class="form-control" id="validationDefault03" required>
-              </div>
-              <div class="col-md-3 mt-2">
-                <label for="validationDefault04" class="form-label">State</label>
-                <select class="form-select" id="validationDefault04" required>
-                  <option selected disabled value="">Pick a state</option>
-                  <option>...</option>
-                </select>
-              </div>
-              <div class="col-md-3 mt-2">
-                <label for="validationDefault05" class="form-label">Postal Code</label>
-                <input type="text" class="form-control" id="validationDefault05" required>
-              </div>
-              <div class="col-md-6 mt-2">
-                  <label class="tarjetas" for="">We accept:</label><br/>
-                  <div class="form-group  col-md-6 ">
-                    <div class="bg-secondary d-flex w-100 p-2 rounded-3">
-
-                    
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="tipoTarjeta" 
-                        id="inlineRadio1" value="mc" required>
-                        <label class="form-check-label" for="inlineRadio1">
-                            <i class="fab fa-cc-mastercard text-light"></i>
-                        </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="tipoTarjeta" 
-                        id="inlineRadio2" value="visa">
-                        <label class="form-check-label" for="inlineRadio2">
-                            <i class="fab fa-cc-visa text-light"></i>
-                        </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="tipoTarjeta" 
-                        id="inlineRadio3" value="dinersClub">
-                        <label class="form-check-label" for="inlineRadio3">
-                            <i class="fab fa-cc-diners-club text-light"></i>
-                        </label>
-                    </div>
-                    <div class="form-check form-check-inline">
-                        <input class="form-check-input" type="radio" name="tipoTarjeta" 
-                        id="inlineRadio4" value="americanExpress">
-                        <label class="form-check-label" for="inlineRadio4">
-                            <i class="fab fa-cc-amex text-light"></i>
-                        </label>
-                    </div>     
-                </div>  
-                </div>
-             
-                
             </div>
             <div class="col-md-6 mt-2">
-                    <label for="exampleFormControlTextarea1">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">   
-                    </textarea>
-                    <small id="comentarioHelpBlock" class="form-text text-muted">
-                    Add any notes here.
-                    </small>
-                </div>
-            <div class="card-footer mt-5">
-                <div class="d-flex justify-content-end">
-                    <button class="btn btn-secondary me-2" type="submit">Cancel</button> 
-                    <button class="btn btn-primary" type="submit">Send</button> 
-                </div>
+              <label for="validationDefault03" class="form-label"
+                >First Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault03"
+                required
+              />
             </div>
-        </form>
-      </div>
+            <div class="col-md-6 mt-2">
+              <label for="validationDefault03" class="form-label"
+                >Last Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault03"
+                required
+              />
+            </div>
+            <div class="col-md-6 mt-2">
+              <label for="validationDefault03" class="form-label">city</label>
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault03"
+                required
+              />
+            </div>
+            <div class="col-md-3 mt-2">
+              <label for="validationDefault04" class="form-label">State</label>
+              <select class="form-select" id="validationDefault04" required>
+                <option selected disabled value="">Pick a state</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-3 mt-2">
+              <label for="validationDefault05" class="form-label"
+                >Postal Code</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                id="validationDefault05"
+                required
+              />
+            </div>
+            <div class="col-md-6 mt-2">
+              <label class="tarjetas" for="">We accept:</label><br />
+              <div class="form-group col-md-6">
+                <div class="bg-secondary d-flex w-100 p-2 rounded-3">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="tipoTarjeta"
+                      id="inlineRadio1"
+                      value="mc"
+                      required
+                    />
+                    <label class="form-check-label" for="inlineRadio1">
+                      <i class="fab fa-cc-mastercard text-light"></i>
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="tipoTarjeta"
+                      id="inlineRadio2"
+                      value="visa"
+                    />
+                    <label class="form-check-label" for="inlineRadio2">
+                      <i class="fab fa-cc-visa text-light"></i>
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="tipoTarjeta"
+                      id="inlineRadio3"
+                      value="dinersClub"
+                    />
+                    <label class="form-check-label" for="inlineRadio3">
+                      <i class="fab fa-cc-diners-club text-light"></i>
+                    </label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="radio"
+                      name="tipoTarjeta"
+                      id="inlineRadio4"
+                      value="americanExpress"
+                    />
+                    <label class="form-check-label" for="inlineRadio4">
+                      <i class="fab fa-cc-amex text-light"></i>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 mt-2">
+              <label for="exampleFormControlTextarea1">Message</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              >
+              </textarea>
+              <small id="comentarioHelpBlock" class="form-text text-muted">
+                Add any notes here.
+              </small>
+            </div>
+            <div class="card-footer mt-5">
+              <div class="d-flex justify-content-end">
+                <button class="btn btn-secondary me-2" type="submit">
+                  Cancel
+                </button>
+                <button class="btn btn-primary" type="submit">Send</button>
+              </div>
+            </div>
+          </div>
         </div>
-    
+      </form>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
